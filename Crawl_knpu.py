@@ -10,10 +10,10 @@ assert "카카오계정" in driver.title
 assert "No results found." not in driver.page_source
 emailid = driver.find_element_by_name("email")
 emailid.clear()
-emailid.send_keys("hclee0730@gmail.com")
+emailid.send_keys("")
 pw = driver.find_element_by_name("password")
 pw.clear()
-pw.send_keys("1234asdf")
+pw.send_keys("")
 driver.find_element_by_css_selector("button.btn_g.btn_confirm.submit").click()
 assert "No results found." not in driver.page_source
 n = 2
